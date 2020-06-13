@@ -14,10 +14,10 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child:Image.asset("../assets/img6.jpg")
-        // (
-        //   image: AssetImage("../assets/img6.jpg"),
-        //   )
+        child:Icon(
+          Icons.airport_shuttle,
+          color:Colors.blue,
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: ()=>{},
