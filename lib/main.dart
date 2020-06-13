@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() =>runApp(MaterialApp(
-    home: Scaffold(
+    home: Home()
+  ));
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
       appBar: AppBar(
         title: Text("Basic"),
         centerTitle: true,
@@ -9,7 +15,7 @@ void main() =>runApp(MaterialApp(
       ),
       body: Center(
         child:Text(
-          "jsijbvsbd",
+          "main app",
           style: TextStyle(
             color: Colors.blue,
             fontSize: 30.0,
@@ -22,6 +28,6 @@ void main() =>runApp(MaterialApp(
         child:Text("click"),
         backgroundColor: Colors.red[600],
       ),
-    ),
-  ));
-
+    );
+  }
+}
