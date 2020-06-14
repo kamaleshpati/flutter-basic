@@ -8,43 +8,79 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(
-        title: Text("Basic"),
+      backgroundColor: Color.fromARGB(20, 20, 20, 20),
+      appBar:AppBar(
+        title:Text("ninja id card"),
         centerTitle: true,
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.grey[850],
+        elevation: 0.0,
       ),
-      body: Row(
-        children:<Widget>[
-          Expanded(
-            flex: 3,
-              child: Container(
-              padding: EdgeInsets.all(20),
-              color: Colors.red,
-              child: Text("one"),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30, 20, 30, 40),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children:<Widget>[
+            Center(
+                          child: CircleAvatar(
+                backgroundImage:AssetImage('/img5.jpg'),
+                radius: 50,
+              ),
             ),
-          ),
-          Expanded(
-            flex: 2,
-              child: Container(
-              padding: EdgeInsets.all(20),
-              color: Colors.cyan,
-              child: Text("two"),
+            Divider(
+              height:200,
+              color:Colors.red,
             ),
-          ),
-           Expanded(
-             flex: 1,
-              child: Container(
-              padding: EdgeInsets.all(20),
-              color: Colors.blue,
-              child: Text("three"),
-          ),
-           ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: ()=>{},
-        child:Text("click"),
-        backgroundColor: Colors.lightBlue,
+            Text(
+              'Name',
+              style:TextStyle(
+                color: Colors.greenAccent,
+                letterSpacing:2.0,
+                )),
+                SizedBox(height: 20,),
+                Text(
+              'jimmy',
+              style:TextStyle(
+                color: Colors.amber,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                letterSpacing:2.0,
+                )),
+                SizedBox(height: 30,),
+                Text(
+              'Designation',
+              style:TextStyle(
+                color: Colors.greenAccent,
+                letterSpacing:2.0,
+                )),
+                SizedBox(height: 20,),
+                Text(
+              'DEV',
+              style:TextStyle(
+                color: Colors.amber,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                letterSpacing:2.0,
+                )),
+                SizedBox(height: 30,),
+                Row(
+                  children:<Widget>[
+                    Icon(
+                      Icons.format_quote,
+                      color:Colors.deepOrange ,
+                    ),
+                     SizedBox(height: 30,),
+                     Text(
+                '9337631479',
+                style:TextStyle(
+                color: Colors.amber,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                letterSpacing:2.0,
+                )),
+                  ]
+                )
+          ]
+        ),
       ),
     );
   }
