@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   int ninjaLevel = 0;
-
+  
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -36,65 +36,7 @@ class _HomeState extends State<Home> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children:<Widget>[
-            Center(
-                          child: CircleAvatar(
-                backgroundImage:AssetImage('/img5.jpg'),
-                radius: 50,
-              ),
-            ),
-            Divider(
-              height:200,
-              color:Colors.red,
-            ),
-            Text(
-              'Name',
-              style:TextStyle(
-                color: Colors.greenAccent,
-                letterSpacing:2.0,
-                )),
-                SizedBox(height: 20,),
-                Text(
-              'jimmy',
-              style:TextStyle(
-                color: Colors.amber,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                letterSpacing:2.0,
-                )),
-                SizedBox(height: 30,),
-                Text(
-              'Designation',
-              style:TextStyle(
-                color: Colors.greenAccent,
-                letterSpacing:2.0,
-                )),
-                SizedBox(height: 20,),
-                Text(
-              '$ninjaLevel',
-              style:TextStyle(
-                color: Colors.amber,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                letterSpacing:2.0,
-                )),
-                SizedBox(height: 30,),
-                Row(
-                  children:<Widget>[
-                    Icon(
-                      Icons.format_quote,
-                      color:Colors.deepOrange ,
-                    ),
-                     SizedBox(height: 30,),
-                     Text(
-                '9337631479',
-                style:TextStyle(
-                color: Colors.amber,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                letterSpacing:2.0,
-                )),
-                  ]
-                )
+
           ]
         ),
       ),
